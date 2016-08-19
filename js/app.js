@@ -114,6 +114,7 @@ $("#user_input").keyup(function() {
     $("#gallery li").each(function() {
         var titleContent = $(this).find("img").attr("title").toLowerCase();
         if ( titleContent.indexOf(userEntry) !== -1 ) {
+            //show matches
             $(this).show("slow");
         } else {
             $(this).slideUp();
